@@ -4,7 +4,6 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int avg;
-char chon;
  main(int argc, char *argv[])
  {
 	do
@@ -24,12 +23,16 @@ char chon;
 				avg= xeploai(am,lt,th);
 				switch(avg){
 					case 1:
+							printf("truot TB\n");	
 					break;
 					case 2:
+						printf("do Tb\n");
 					break;
 					case 3:
+						printf("kha Tb\n");
 					break;
 					case 4:
+							printf("gioi Tb\n");
 					break;
 						
 				}
@@ -45,22 +48,18 @@ char chon;
 		avg=total/3;
 		if(avg<40)
 		{
-		printf("truot TB\n");
 		return 1;
 		}
 		else if(avg>40&&avg<60)
 		{
-		printf("do Tb\n");
 		return 2;
 		}
 		else if(avg>60&&avg<80)
 		{
-		printf("kha Tb\n");
 		return 3;
 		}
 		else
 		{
-		printf("gioi Tb\n");
 		return 4;
 		}
 		
